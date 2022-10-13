@@ -8,4 +8,4 @@ crete hosted zone in aws route53 and copy dns from your hosted dns to web dns ex
 
 when you are going to exicute web dns bs2m.xyz that is linked to your hosted dns so you will get backend server.
 
-create record set to connect your server ex: a record / c record.
+create record set to connect your server ex: a record / c name record (hosted records).
