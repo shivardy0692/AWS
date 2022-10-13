@@ -10,4 +10,5 @@ When you are going to exicute web dns bs2m.xyz that is linked to your hosted dns
 
 Create record set to connect your server ex: a record / c name record (hosted records).
 
-If you don't have ip address but still you want to change dns name that time we must use ### c_name record
+If you don't have ip address but still you want to change dns name that time we must use c name record.
+
