@@ -1,6 +1,6 @@
 # Route53
 
-Cretae one dns on any website ex: bs2m.xyz (godaddy)
+Cretae one dns in any website ex: bs2m.xyz (godaddy)
 
 Crete hosted zone in aws route53 and copy dns from your hosted dns to web dns ex: bs2m.xyz (godaddy)
 
