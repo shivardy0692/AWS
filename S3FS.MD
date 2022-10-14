@@ -40,8 +40,6 @@ touch /etc/passwd-s3fs
 vim /etc/passwd-s3fs
 Your_accesskey:Your_secretkey
 ```
-
-ref url: https://cloudkul.com/blog/mounting-s3-bucket-linux-ec2-instance/
 ## Step-8:- Change the permission of file
 ```sh 
 sudo chmod 640 /etc/passwd-s3fs
@@ -51,3 +49,5 @@ sudo chmod 640 /etc/passwd-s3fs
 mkdir /mys3bucket
 s3fs your_bucketname -o use_cache=/tmp -o allow_other -o uid=1001 -o mp_umask=002 -o multireq_max=5 /mys3bucket
 ```
+
+ref url: https://cloudkul.com/blog/mounting-s3-bucket-linux-ec2-instance/
