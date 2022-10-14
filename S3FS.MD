@@ -51,3 +51,4 @@ s3fs your_bucketname -o use_cache=/tmp -o allow_other -o uid=1001 -o mp_umask=00
 ```
 
 ref url: https://cloudkul.com/blog/mounting-s3-bucket-linux-ec2-instance/
+         https://upcloud.com/resources/tutorials/mount-object-storage-cloud-server-s3fs-fuse
