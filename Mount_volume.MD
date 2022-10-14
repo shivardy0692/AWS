@@ -14,24 +14,35 @@ file -s /dev/xvdb
 ````
 ###### If the response shows “/dev/xvdb: data”, it means your volume is empty.
 
-###### Format the volume to xfs filesystem
+###### Format the volume to xfs filesystem.
 ````sh
 mkfs.xfs  /dev/xvdf
 ````
-###### create one directory
+###### create one directory.
 ````sh
 mkdir mount_volume
 ````
-###### Mount the file system on the created directory 
+###### Mount the file system on the created directory.
 ````sh
 mount /dev/xvdf mount_volume
 ````
-###### execute -- blkid (data should be there after reboot)
+###### Data should be there after reboot using below command.
+````sh
+blkid
+````
 
-###### execute -- vi /etc/fstab
+###### To Check file system 
+````sh
+vi /etc/fstab
+````
+###### We shiuld check unmounted devices using below command.
+````sh
+mount -a
+````
 
-###### execute -- mount -a (we shiuld check unmounted devices)
-
-###### execute -- df -hT  
+###### Check disk space
+````sh
+df -hT
+````
 
 ![image](https://user-images.githubusercontent.com/48147995/195832785-0e91eddb-5026-473c-8156-d194d9622a9f.png)
