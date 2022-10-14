@@ -26,6 +26,10 @@ mkdir mount_volume
 ````sh
 mount /dev/xvdf mount_volume
 ````
+###### Unmount the file system
+````sh
+[root@ip-172-31-36-17 ~]# umount --verbose mount_volume/
+````
 ###### Data should be there after reboot using below command.
 ````sh
 blkid
