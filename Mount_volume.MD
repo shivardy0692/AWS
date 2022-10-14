@@ -10,9 +10,9 @@
 
 ###### step 4) execute -- mkfs.xfs  /dev/xvdf
 
-###### step 5) create one empty directory ex: mkdir volume
+###### step 5) create one empty directory ex: mkdir mount_volume
 
-###### step 6) execute -- mount /dev/xvdf volume
+###### step 6) execute -- mount /dev/xvdf mount_volume
 
 ###### step 7) execute -- blkid (data should be there after reboot)
 
