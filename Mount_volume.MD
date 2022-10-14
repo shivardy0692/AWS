@@ -19,3 +19,7 @@
 ###### step 8) execute -- vi /etc/fstab
 
 ###### step 9) execute -- mount -a (we shiuld check unmounted devices)
+
+###### step 10) execute -- df -hT  
+
+![image](https://user-images.githubusercontent.com/48147995/195832785-0e91eddb-5026-473c-8156-d194d9622a9f.png)
