@@ -142,3 +142,5 @@ Enter a name for your rule, such as "StartEC2Instances".
 (Optional) Enter a Description, such as "Starts EC2 instances every morning at 7 AM."
 In step 5, for Cron expression, enter an expression that tells Lambda when to start your instances.
 In step 7, for Function, choose the function that starts your EC2 instances.
+
+url: https://aws.amazon.com/premiumsupport/knowledge-center/start-stop-lambda-eventbridge/#:~:text=To%20stop%20and%20start%20EC2%20instances%20at%20regular,rules%20that%20trigger%20your%20function%20on%20a%20schedule.
