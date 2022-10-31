@@ -10,7 +10,7 @@
 
 ###### Check if the volume has any data using the following command.
 ````sh
-file -s /dev/xvdb
+file -s /dev/xvdf
 ````
 ###### If the response shows “/dev/xvdb: data”, it means your volume is empty.
 
