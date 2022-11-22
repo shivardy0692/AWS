@@ -55,3 +55,5 @@ s3fs#ecc-hcm-archieve-27-02-2022 /export fuse _netdev,allow_other,dbglevel=info,
 
 ref url: https://cloudkul.com/blog/mounting-s3-bucket-linux-ec2-instance/
          https://upcloud.com/resources/tutorials/mount-object-storage-cloud-server-s3fs-fuse
+
+https://upcloud.com/resources/tutorials/mount-object-storage-cloud-server-s3fs-fuse
