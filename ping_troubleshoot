@@ -1,1 +1,32 @@
 https://aws.amazon.com/premiumsupport/knowledge-center/s3-could-not-connect-endpoint-url/#:~:text=To%20troubleshoot%20this%20error%2C%20check%20the%20following%3A%201,the%20Amazon%20Virtual%20Private%20Cloud%20%28Amazon%20VPC%29%20configuration.
+
+
+
+ 1999  aws s3 ls
+ 2000  sudo snap install amazon-ssm-agent --classic
+ 2001  systemctl restart amazon-ssm-agent.service
+ 2002  sudo snap install amazon-ssm-agent --classic
+ 2003  systemctl status4 amazon-ssm-agent.service
+ 2004  systemctl status amazon-ssm-agent.service
+ 2005  systemctl stop amazon-ssm-agent.service
+ 2006  apt remove amazon-ssm-agent
+ 2007  mkdir /tmp/ssm
+ 2008  cd /tmp/ssm
+ 2009  wget https://s3.amazonaws.com/ec2-downloads-windows/SSMAgent/latest/debian_amd64/amazon-ssm-agent.deb
+ 2010  wget
+ 2011  wget https://s3.amazonaws.com/ec2-downloads-windows/SSMAgent/latest/debian_amd64/amazon-ssm-agent.deb
+ 2012  telnet s3.ap-south-1.amazonaws.com 443
+ 2013  ping google.com
+ 2014  cat /etc/hosts
+ 2015  cat /etc/resolv.conf
+ 2016  vi /etc/resolv.conf
+ 2017  systemctl restart systemd-resolved.service
+ 2018  systemctl status systemd-resolved.service
+ 2019  ping google.com
+ 2020  wget https://s3.amazonaws.com/ec2-downloads-windows/SSMAgent/latest/debian_amd64/amazon-ssm-agent.deb
+ 2021  sudo dpkg -i amazon-ssm-agent.deb
+ 2022  sudo start amazon-ssm-agent
+ 2023  sudo systemctl start amazon-ssm-agent
+ 2024  sudo systemctl status amazon-ssm-agent
+ 2025  istory
+ 2026  history
