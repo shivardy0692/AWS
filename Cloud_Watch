@@ -1,0 +1,16 @@
+Aws cloud watch provide real time monitoring of aws resources and customer application running on amazon infrastructure.
+Cloud watch stores the data in the form of logs and mertics and event's.
+
+Configure below path for logs:
+etc/awslogs/awslog.conf
+[/var/log/nginx/error]
+datetime-format = %b %b %H : %M : %S
+file = /var/log/nginx/error.log
+buffer-stream-name = {instance_id}
+initial-position = start_of_file
+log-group-name = /var/log/nginx/error
+
+# service awslogs start
+# service awslogs status
+
+Cloud trail is a service that enable governance, complance, operational auditing and risk auditing of your aws account.
