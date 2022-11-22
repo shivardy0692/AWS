@@ -48,6 +48,9 @@ sudo chmod 640 /etc/passwd-s3fs
 ```sh 
 mkdir /mys3bucket
 s3fs your_bucketname -o use_cache=/tmp -o allow_other -o uid=1001 -o mp_umask=002 -o multireq_max=5 /mys3bucket
+#### reboot
+vi /etc/s3fs
+s3fs#ecc-hcm-archieve-27-02-2022 /export fuse _netdev,allow_other,dbglevel=info,url=https://s3.amazonaws.com,iam_role=auto,multireq_max=500 0 0
 ```
 
 ref url: https://cloudkul.com/blog/mounting-s3-bucket-linux-ec2-instance/
