@@ -39,6 +39,11 @@ blkid
 ````sh
 vi /etc/fstab
 ````
+
+###### Mount Increased Volume:
+````sh
+sudo resize2fs /dev/nvme0n1p1
+````
 ###### We shiuld check unmounted devices using below command.
 ````sh
 mount -a
