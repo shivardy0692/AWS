@@ -53,6 +53,13 @@ df -hT
 ###### Mount Increased Volume:
 ````sh
 sudo resize2fs /dev/nvme0n1p1
+
+![image](https://user-images.githubusercontent.com/48147995/217589813-4d938307-5551-4be1-bf94-a26a48140d7e.png)
+
+lsblk
+growpart /dev/xvda 1 --> linux
+sudo resize2fs /dev/xvda1 --> for reboot
+df -hT
 ````
 
 ![image](https://user-images.githubusercontent.com/48147995/195832785-0e91eddb-5026-473c-8156-d194d9622a9f.png)
