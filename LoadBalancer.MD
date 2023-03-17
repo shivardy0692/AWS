@@ -11,7 +11,38 @@ NLB operates at layer 4, it supports for network based routing and it route the 
 ![image](https://user-images.githubusercontent.com/48147995/225862324-4e06aef0-9f97-4e1f-9861-693b77f531dc.png)
 
 2) Install nginx on the launched servers.
+
 ````sh
 [root@ip-192-168-1-13 ~]# sudo yum install nginx -y
-[root@ip-192-168-1-13 ~]# service nginx start
+[root@ip-192-168-1-13 ~]# systemctl start nginx
+[root@ip-192-168-1-13 ~]# systemctl enable nginx
+[root@ip-192-168-1-13 ~]# systemctl status nginx
 ````
+
+3) Enable port 80 on the security group that is attached to the launched server in order to enable it.
+
+![image](https://user-images.githubusercontent.com/48147995/225899192-91a29688-b5dc-4612-827e-354469aac5a6.png)
+
+4) Copy and paste the server Public IPv4 DNS on the browser then we will get output.
+
+![image](https://user-images.githubusercontent.com/48147995/225900411-caebde32-1338-4d55-9c5a-6bd81974e29f.png)
+
+![image](https://user-images.githubusercontent.com/48147995/225900598-5b6ee297-f005-46a4-9f9d-538cb90c18bf.png)
+
+5) Create target group.
+
+![image](https://user-images.githubusercontent.com/48147995/225902039-256e1a46-e87f-488a-b241-628b3a819d7e.png)
+
+![image](https://user-images.githubusercontent.com/48147995/225902244-7c9d8eb0-8784-496c-8f9b-7c55d14b2214.png)
+
+![image](https://user-images.githubusercontent.com/48147995/225902612-6f148040-e747-43c0-b6ca-404f2ba1763d.png)
+
+6) Create load balancer.
+
+![image](https://user-images.githubusercontent.com/48147995/225903993-e6079951-9e39-46e9-a055-25709ee24946.png)
+
+![image](https://user-images.githubusercontent.com/48147995/225904482-6809685a-083b-4703-a14a-e3cbdfe0db24.png)
+
+![image](https://user-images.githubusercontent.com/48147995/225905038-4e53b2c2-ea44-475a-af34-41d868795805.png)
+
+
