@@ -1,10 +1,12 @@
 ## Load Balancer:
 
+Errors: 504 Gateway Time-out --> Security group port issue.
+
 The load balancer distributes incoming application traffic across multiple targets, such as EC2 instances, in multiple Availability Zones.
 
 ### Network LB
 
-NLB operates at layer 4, it supports for network based routing and it route the tcp/udp/tls traffic, static IPs.
+NLB operates at layer 4, it supports network-based routing and routes the tcp/udp/tls traffic, static IPs.
 
 1) Launch more then one server on EC2 Dashboard like Server-A and Server-B.
 
