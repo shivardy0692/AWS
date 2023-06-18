@@ -1,7 +1,10 @@
 ## Load Balancer:
 
-Errors: 504 Gateway Time-out --> Security group port issue.
-
+Errors:
+````sh
+Health Status (unhealthy)
+504 Gateway Time-out --> Security group port issue.
+````
 The load balancer distributes incoming application traffic across multiple targets, such as EC2 instances, in multiple Availability Zones.
 
 ### Network LB
