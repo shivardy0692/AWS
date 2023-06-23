@@ -4,7 +4,19 @@ Errors:
 ````sh
 Health Status (unhealthy)
 504 Gateway Time-out --> Security group port issue.
+Request timed out:
+We should configure LB IP to the firewall in the local machine.
 ````
+click windows --> check firewall status --> advanced settings --> add inbound rules
+![image](https://github.com/shivardy0692/AWS/assets/48147995/514d19dd-00a9-4c42-8207-7b91f0856974)
+![image](https://github.com/shivardy0692/AWS/assets/48147995/70da9239-9b77-4aeb-9b41-3d116785a7aa)
+![image](https://github.com/shivardy0692/AWS/assets/48147995/4d5d87d2-d20c-45b5-ac88-58cb96bd250a)
+
+#### Get LB IP from Network Interfaces:
+
+![image](https://github.com/shivardy0692/AWS/assets/48147995/91410c4f-a544-4ee5-805f-21efd73cf574)
+
+
 The load balancer distributes incoming application traffic across multiple targets, such as EC2 instances, in multiple Availability Zones.
 
 ### Network LB
