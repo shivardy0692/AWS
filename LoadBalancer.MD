@@ -7,6 +7,8 @@ Health Status (unhealthy)
 Request timed out:
 We should configure LB IP to the firewall in the local machine.
 ````
+404 --> curl -lvl https://10.0.0.1/
+
 click windows --> check firewall status --> advanced settings --> add inbound rules
 ![image](https://github.com/shivardy0692/AWS/assets/48147995/514d19dd-00a9-4c42-8207-7b91f0856974)
 ![image](https://github.com/shivardy0692/AWS/assets/48147995/70da9239-9b77-4aeb-9b41-3d116785a7aa)
