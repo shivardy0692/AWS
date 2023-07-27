@@ -1,5 +1,10 @@
 ## Load Balancer:
 
+we should add loadbalancer subnet ip address to the instance which is in the target group.
+telnet 127.0.0.1 80
+
+result: healthy
+
 Errors:
 ````sh
 Health Status (unhealthy)
