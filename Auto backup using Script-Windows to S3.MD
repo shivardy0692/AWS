@@ -23,3 +23,5 @@ aws s3 sync file_path s3://bucket_name
 8) Click on action & click new & select script file.
 
 9) So our task schedular is ready..
+
+10) 
