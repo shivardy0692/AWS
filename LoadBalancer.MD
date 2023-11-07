@@ -7,7 +7,12 @@ telnet 127.0.0.1 80
 result: healthy
 
 Errors: Target --> unhealthy 404
-        Add Site-Bindings as *
+1) we should enable IIS: Press the Windows Key and type Windows Features, select the first entry Turn Windows Features On or Off. Make sure the box next to IIS is checked.
+2) windows + r --> inetmgr
+3) In the Connections pane, expand the server name, expand Sites, and then click the Web site on which you want to configure the bindings.
+4) In the Actions pane, click Bindings...
+5) In the Site Bindings dialog box, click Add...
+6) Add Site-Bindings as *
 
 ````sh
 Health Status (unhealthy)
