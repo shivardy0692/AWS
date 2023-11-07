@@ -6,8 +6,8 @@ telnet 127.0.0.1 80
 
 result: healthy
 
-Errors: 404
-C:\Users\Minfy\Downloads\MicrosoftTeams-image (2).png
+Errors: Target --> unhealthy 404
+        Add Site-Bindings as *
 
 ````sh
 Health Status (unhealthy)
