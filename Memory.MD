@@ -5,7 +5,7 @@ Swap Memory (Linux):
 swapon --> we will get swap file path.
 swapoff /swap file path --> will turn-off swap.
 
-#### Create swap:
+Create swap:
 $ dd if=/dev/zero of=/swapfile bs=1M count 4096 status=progress
 chmod 600 /swapfile
 mkswap /swapfile
