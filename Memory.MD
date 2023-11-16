@@ -15,4 +15,5 @@ vi /etc/fstab
 /swapfile   none   swap   sw   0    0  
 reboot
 ````
-             
+````sh
+Control Panel --> All Control Panel Items --> System --> Advanced system settings --> Advanced tab --> edit performance --> visual effects tab (adjust for best appearance) --> advanced tab   
