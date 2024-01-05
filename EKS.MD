@@ -20,3 +20,4 @@ Create a role (w_role) with IAM policy: EKS_CNI_policy, EKSWorkerNodePolicy & EC
 setup worker nodes on server:
 EKS -> Compute (tab) -> add node group -> name (worker_node) -> Node IAM Role Name (choose above w_role)
 ````
+URL: https://www.youtube.com/watch?v=aZd0UolVwD4
