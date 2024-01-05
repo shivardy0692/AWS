@@ -1,6 +1,16 @@
 Aws cloud watch provide real time monitoring of aws resources and customer application running on amazon infrastructure.
 Cloud watch stores the data in the form of logs and mertics and event's.
 
+````sh
+IAM Roles -> CloudWatchAgentServerPolicy
+sudo yum install amazon-cloudwatch-agent -y
+sudo /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent-config-wizard
+sudo /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent-ctl -a fetch-config -m ec2 -s -c file:/opt/aws/amazon-cloudwatch-agent/bin/config.json
+aws console -> cloudwatch -> metrics -> All -> EC2 -> Per-Instance Metrics
+
+sudo yum remove amazon-cloudwatch-agent -y
+````
+
 Configure below path for logs:
 etc/awslogs/awslog.conf
 [/var/log/nginx/error]
