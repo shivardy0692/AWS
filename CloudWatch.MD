@@ -1,6 +1,6 @@
 CloudWatch: (https://www.youtube.com/watch?v=mIVluHNNioE)
 
-Create a IAM role for cloudwatch and attached given CloudWatchAgentAdminPolicy
+Create an IAM role for cloudwatch and attached given CloudWatchAgentAdminPolicy
 ````sh
 wget https://s3.amazonaws.com/amazoncloudwatch-agent/ubuntu/amd64/latest/amazon-cloudwatch-agent.deb
 sudo dpkg -i -E ./amazon-cloudwatch-agent.deb
