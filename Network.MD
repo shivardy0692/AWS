@@ -6,6 +6,10 @@ sudo ufw allow 'Apache Full'
 sudo ufw allow 'Apache'
 sudo ufw allow 22/tcp
 sudo ufw status
+
+sudo vi /etc/mysql/mysql.conf.d/mysqld.cnf
+bind-address           = 0.0.0.0 (public)
+sudo service mysql restart
 ````
 
 #### VPC Peering vs Transit gateway:
