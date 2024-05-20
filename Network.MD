@@ -1,3 +1,13 @@
+#### Port open for network error:
+````sh
+sudo netstat -tuln | grep 3306
+sudo ufw allow 3306
+sudo ufw allow 'Apache Full'
+sudo ufw allow 'Apache'
+sudo ufw allow 22/tcp
+sudo ufw status
+````
+
 #### VPC Peering vs Transit gateway:
 ````sh
 VPC Peering: Network connection between 2 vpc's.
