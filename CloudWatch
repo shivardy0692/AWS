@@ -1,3 +1,16 @@
+CloudWatch: (https://www.youtube.com/watch?v=mIVluHNNioE)
+
+Create a IAM role for cloudwatch and attached given CloudWatchAgentAdminPolicy
+````sh
+wget https://s3.amazonaws.com/amazoncloudwatch-agent/ubuntu/amd64/latest/amazon-cloudwatch-agent.deb
+sudo dpkg -i -E ./amazon-cloudwatch-agent.deb
+sudo /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent-config-wizard
+sudo apt-get update -y
+sudo apt-get install collectd
+sudo /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent-ctl -a fetch-config -m ec2 -c file:/opt/aws/amazon-cloudwatch-agent/bin/config.json -s
+sudo /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent-ctl -a status
+````
+
 Aws cloud watch provide real time monitoring of aws resources and customer application running on amazon infrastructure.
 Cloud watch stores the data in the form of logs and mertics and event's.
 
