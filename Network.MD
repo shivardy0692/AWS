@@ -1,4 +1,4 @@
-#### Port open for network error:
+#### Port open for an network error:
 ````sh
 sudo netstat -tuln | grep 3306
 sudo ufw allow 3306
