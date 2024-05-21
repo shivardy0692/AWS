@@ -21,6 +21,25 @@ sudo apt-get update -y
 sudo apt-get install collectd
 sudo /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent-ctl -a fetch-config -m ec2 -c file:/opt/aws/amazon-cloudwatch-agent/bin/config.json -s
 sudo /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent-ctl -a status
+
+systemctl status amazon-cloudwatch-agent.service
+locate amazon-cloudwatch-agent
+-------------
+Create an alarm:
+
+Metric Name: mem_used_percent
+InstanceId: 
+Statistic: Average
+Period: 30 sec
+
+Threshold type: Static
+Whenever mem_used_percent is: Greater/Equal
+than.... 80
+------------
+/opt/aws/amazon-cloudwatch-agent/etc/amazon-cloudwatch-agent.d/file_config.json
+/opt/aws/amazon-cloudwatch-agent/logs
+
+stress-ng --vm 1 --vm-bytes $(awk '/MemAvailable/{printf "%d\n", $2 * 0.9;}' < /proc/meminfo)k --timeout 180s
 ````
 
 Aws cloud watch provide real time monitoring of aws resources and customer application running on amazon infrastructure.
