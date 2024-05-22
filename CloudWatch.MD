@@ -25,7 +25,7 @@ sudo /opt/aws/amazon-cloudwatch-agent/bin/amazon-cloudwatch-agent-ctl -a status
 systemctl status amazon-cloudwatch-agent.service
 locate amazon-cloudwatch-agent
 -------------
-Create an alarm:
+Create an alarm: https://www.youtube.com/watch?v=Br191ayrcEA
 
 Metric Name: mem_used_percent
 InstanceId: 
